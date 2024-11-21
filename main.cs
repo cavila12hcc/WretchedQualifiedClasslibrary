@@ -1,6 +1,6 @@
 using System;
 
-class GreenvilleIdol
+class Program
 {
     static void Main()
     {
@@ -19,6 +19,7 @@ class GreenvilleIdol
                 int prevYearContestants = GetContestants("Number of contestants last year (0-30): ");
                 int currentYearContestants = GetContestants("Number of contestants this year (0-30): ");
 
+                // Corrected order of conditions
                 if (currentYearContestants > 2 * prevYearContestants)
                 {
                     Console.WriteLine("The competition is more than twice as big this year!");
